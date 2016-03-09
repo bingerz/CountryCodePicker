@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_catalog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:background="#E0E0E0"
+        android:textColor="#454545" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView android:id="@+id/iv_list_country_icon"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/f000"
+            android:padding="10dp"
+            android:scaleType="center" />
+
+        <TextView android:id="@+id/tv_list_country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_list_country_icon"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:textColor="#212121" />
+
+        <TextView
+            android:id="@+id/tv_list_country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:textColor="#212121" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_list_country_name"
+            android:layout_marginTop="5dp"
+            android:background="#CCCCCC" />
+    </RelativeLayout>
+</LinearLayout>
