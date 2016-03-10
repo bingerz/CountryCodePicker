@@ -1,3 +1,1438 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Country-code-picker</string>
+    <string-array name="c000">
+        <item>阿富汗</item>
+        <item>Afghanistan</item>
+        <item>93</item>
+        <item>AF</item>
+    </string-array>
+    <string-array name="c001">
+        <item>阿尔巴尼亚</item>
+        <item>Albania</item>
+        <item>355</item>
+        <item>AL</item>
+    </string-array>
+    <string-array name="c002">
+        <item>阿尔及利亚</item>
+        <item>Algeria</item>
+        <item>213</item>
+        <item>DZ</item>
+    </string-array>
+    <string-array name="c003">
+        <item>美属萨摩亚</item>
+        <item>American Samoa</item>
+        <item>1684</item>
+        <item>AS</item>
+    </string-array>
+    <string-array name="c004">
+        <item>安道尔</item>
+        <item>Andorra</item>
+        <item>376</item>
+        <item>AD</item>
+    </string-array>
+    <string-array name="c005">
+        <item>安哥拉</item>
+        <item>Angola</item>
+        <item>244</item>
+        <item>AO</item>
+    </string-array>
+    <string-array name="c006">
+        <item>安圭拉</item>
+        <item>Anguilla</item>
+        <item>1264</item>
+        <item>AI</item>
+    </string-array>
+    <string-array name="c007">
+        <item>安提瓜和巴布达</item>
+        <item>Antigua and Barbuda</item>
+        <item>1268</item>
+        <item>AG</item>
+    </string-array>
+    <string-array name="c008">
+        <item>阿根廷</item>
+        <item>Argentina</item>
+        <item>54</item>
+        <item>AR</item>
+    </string-array>
+    <string-array name="c009">
+        <item>亚美尼亚</item>
+        <item>Armenia</item>
+        <item>374</item>
+        <item>AM</item>
+    </string-array>
+    <string-array name="c010">
+        <item>阿鲁巴</item>
+        <item>Aruba</item>
+        <item>297</item>
+        <item>AW</item>
+    </string-array>
+    <string-array name="c011">
+        <item>澳大利亚</item>
+        <item>Australia</item>
+        <item>61</item>
+        <item>AU</item>
+    </string-array>
+    <string-array name="c012">
+        <item>奥地利</item>
+        <item>Austria</item>
+        <item>43</item>
+        <item>AT</item>
+    </string-array>
+    <string-array name="c013">
+        <item>阿塞拜疆</item>
+        <item>Azerbaijan</item>
+        <item>994</item>
+        <item>AZ</item>
+    </string-array>
+    <string-array name="c014">
+        <item>巴哈马</item>
+        <item>The Bahamas</item>
+        <item>1242</item>
+        <item>BS</item>
+    </string-array>
+    <string-array name="c015">
+        <item>巴林</item>
+        <item>Bahrain</item>
+        <item>973</item>
+        <item>BH</item>
+    </string-array>
+    <string-array name="c016">
+        <item>孟加拉国</item>
+        <item>Bangladesh</item>
+        <item>880</item>
+        <item>BD</item>
+    </string-array>
+    <string-array name="c017">
+        <item>巴巴多斯</item>
+        <item>Barbados</item>
+        <item>1246</item>
+        <item>BB</item>
+    </string-array>
+    <string-array name="c018">
+        <item>白俄罗斯</item>
+        <item>Belarus</item>
+        <item>375</item>
+        <item>BY</item>
+    </string-array>
+    <string-array name="c019">
+        <item>比利时</item>
+        <item>Belgium</item>
+        <item>32</item>
+        <item>BE</item>
+    </string-array>
+    <string-array name="c020">
+        <item>伯利兹</item>
+        <item>Belize</item>
+        <item>501</item>
+        <item>BZ</item>
+    </string-array>
+    <string-array name="c021">
+        <item>贝宁</item>
+        <item>Benin</item>
+        <item>229</item>
+        <item>BJ</item>
+    </string-array>
+    <string-array name="c022">
+        <item>百慕大</item>
+        <item>Bermuda</item>
+        <item>1441</item>
+        <item>BM</item>
+    </string-array>
+    <string-array name="c023">
+        <item>不丹</item>
+        <item>Bhutan</item>
+        <item>975</item>
+        <item>BT</item>
+    </string-array>
+    <string-array name="c024">
+        <item>玻利维亚</item>
+        <item>Bolivia</item>
+        <item>591</item>
+        <item>BO</item>
+    </string-array>
+    <string-array name="c025">
+        <item>波斯尼亚和黑塞哥维那</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>387</item>
+        <item>BA</item>
+    </string-array>
+    <string-array name="c026">
+        <item>博茨瓦纳</item>
+        <item>Botswana</item>
+        <item>267</item>
+        <item>BW</item>
+    </string-array>
+    <string-array name="c027">
+        <item>巴西</item>
+        <item>Brazil</item>
+        <item>55</item>
+        <item>BR</item>
+    </string-array>
+    <string-array name="c028">
+        <item>英属印度洋领地</item>
+        <item>British Indian Ocean Territory</item>
+        <item>246</item>
+        <item>IO</item>
+    </string-array>
+    <string-array name="c029">
+        <item>英属维京群岛</item>
+        <item>British Virgin Islands</item>
+        <item>1284</item>
+        <item>VG</item>
+    </string-array>
+    <string-array name="c030">
+        <item>文莱</item>
+        <item>Brunei</item>
+        <item>673</item>
+        <item>BN</item>
+    </string-array>
+    <string-array name="c031">
+        <item>保加利亚</item>
+        <item>Bulgaria</item>
+        <item>359</item>
+        <item>BG</item>
+    </string-array>
+    <string-array name="c032">
+        <item>布基纳法索</item>
+        <item>Burkina Faso</item>
+        <item>226</item>
+        <item>BF</item>
+    </string-array>
+    <string-array name="c033">
+        <item>布隆迪</item>
+        <item>Burundi</item>
+        <item>257</item>
+        <item>BI</item>
+    </string-array>
+    <string-array name="c034">
+        <item>柬埔寨</item>
+        <item>Cambodia</item>
+        <item>855</item>
+        <item>KH</item>
+    </string-array>
+    <string-array name="c035">
+        <item>喀麦隆</item>
+        <item>Cameroon</item>
+        <item>237</item>
+        <item>CM</item>
+    </string-array>
+    <string-array name="c036">
+        <item>加拿大</item>
+        <item>Canada</item>
+        <item>1</item>
+        <item>CA</item>
+    </string-array>
+    <string-array name="c037">
+        <item>佛得角</item>
+        <item>Cape Verde</item>
+        <item>238</item>
+        <item>CV</item>
+    </string-array>
+    <string-array name="c038">
+        <item>荷兰加勒比区</item>
+        <item>Caribbean Netherlands</item>
+        <item>599</item>
+        <item>BQ</item>
+    </string-array>
+    <string-array name="c039">
+        <item>开曼群岛</item>
+        <item>Cayman Islands</item>
+        <item>1345</item>
+        <item>KY</item>
+    </string-array>
+    <string-array name="c040">
+        <item>中非共和国</item>
+        <item>Central African Republic</item>
+        <item>236</item>
+        <item>CF</item>
+    </string-array>
+    <string-array name="c041">
+        <item>乍得</item>
+        <item>Chad</item>
+        <item>235</item>
+        <item>TD</item>
+    </string-array>
+    <string-array name="c042">
+        <item>智利</item>
+        <item>Chile</item>
+        <item>56</item>
+        <item>CL</item>
+    </string-array>
+    <string-array name="c043">
+        <item>中国</item>
+        <item>China</item>
+        <item>86</item>
+        <item>CN</item>
+    </string-array>
+    <string-array name="c044">
+        <item>哥伦比亚</item>
+        <item>Colombia</item>
+        <item>57</item>
+        <item>CO</item>
+    </string-array>
+    <string-array name="c045">
+        <item>科摩罗</item>
+        <item>Comoros</item>
+        <item>269</item>
+        <item>KM</item>
+    </string-array>
+    <string-array name="c046">
+        <item>刚果民主共和国</item>
+        <item>Democratic Republic of the Congo</item>
+        <item>243</item>
+        <item>CD</item>
+    </string-array>
+    <string-array name="c047">
+        <item>刚果共和国</item>
+        <item>Republic of the Congo</item>
+        <item>242</item>
+        <item>CG</item>
+    </string-array>
+    <string-array name="c048">
+        <item>库克群岛</item>
+        <item>Cook Islands</item>
+        <item>682</item>
+        <item>CK</item>
+    </string-array>
+    <string-array name="c049">
+        <item>哥斯达黎加</item>
+        <item>Costa Rica</item>
+        <item>506</item>
+        <item>CR</item>
+    </string-array>
+    <string-array name="c050">
+        <item>科特迪瓦</item>
+        <item>Côte d’Ivoire</item>
+        <item>225</item>
+        <item>CI</item>
+    </string-array>
+    <string-array name="c051">
+        <item>克罗地亚</item>
+        <item>Croatia</item>
+        <item>385</item>
+        <item>HR</item>
+    </string-array>
+    <string-array name="c052">
+        <item>古巴</item>
+        <item>Cuba</item>
+        <item>53</item>
+        <item>CU</item>
+    </string-array>
+    <string-array name="c053">
+        <item>库拉索</item>
+        <item>Curaçao</item>
+        <item>599</item>
+        <item>CW</item>
+    </string-array>
+    <string-array name="c054">
+        <item>塞浦路斯</item>
+        <item>Cyprus</item>
+        <item>357</item>
+        <item>CY</item>
+    </string-array>
+    <string-array name="c055">
+        <item>捷克</item>
+        <item>Czech Republic</item>
+        <item>420</item>
+        <item>CZ</item>
+    </string-array>
+    <string-array name="c056">
+        <item>丹麦</item>
+        <item>Denmark</item>
+        <item>45</item>
+        <item>DK</item>
+    </string-array>
+    <string-array name="c057">
+        <item>吉布提</item>
+        <item>Djibouti</item>
+        <item>253</item>
+        <item>DJ</item>
+    </string-array>
+    <string-array name="c058">
+        <item>多米尼加</item>
+        <item>Dominica</item>
+        <item>1767</item>
+        <item>DM</item>
+    </string-array>
+    <string-array name="c059">
+        <item>多米尼加共和国</item>
+        <item>Dominican Republic</item>
+        <item>1809</item>
+        <item>DO</item>
+    </string-array>
+    <string-array name="c060">
+        <item>厄瓜多尔</item>
+        <item>Ecuador</item>
+        <item>593</item>
+        <item>EC</item>
+    </string-array>
+    <string-array name="c061">
+        <item>埃及</item>
+        <item>Egypt</item>
+        <item>20</item>
+        <item>EG</item>
+    </string-array>
+    <string-array name="c062">
+        <item>萨尔瓦多</item>
+        <item>El Salvador</item>
+        <item>503</item>
+        <item>SV</item>
+    </string-array>
+    <string-array name="c063">
+        <item>赤道几内亚</item>
+        <item>Equatorial Guinea</item>
+        <item>240</item>
+        <item>GQ</item>
+    </string-array>
+    <string-array name="c064">
+        <item>厄立特里亚</item>
+        <item>Eritrea</item>
+        <item>291</item>
+        <item>ER</item>
+    </string-array>
+    <string-array name="c065">
+        <item>爱沙尼亚</item>
+        <item>Estonia</item>
+        <item>372</item>
+        <item>EE</item>
+    </string-array>
+    <string-array name="c066">
+        <item>埃塞俄比亚</item>
+        <item>Ethiopia</item>
+        <item>251</item>
+        <item>ET</item>
+    </string-array>
+    <string-array name="c067">
+        <item>福克兰群岛</item>
+        <item>Falkland Islands</item>
+        <item>500</item>
+        <item>FK</item>
+    </string-array>
+    <string-array name="c068">
+        <item>法罗群岛</item>
+        <item>Faroe Islands</item>
+        <item>298</item>
+        <item>FO</item>
+    </string-array>
+    <string-array name="c069">
+        <item>斐济</item>
+        <item>Fiji</item>
+        <item>679</item>
+        <item>FJ</item>
+    </string-array>
+    <string-array name="c070">
+        <item>芬兰</item>
+        <item>Finland</item>
+        <item>358</item>
+        <item>FI</item>
+    </string-array>
+    <string-array name="c071">
+        <item>法国</item>
+        <item>France</item>
+        <item>33</item>
+        <item>FR</item>
+    </string-array>
+    <string-array name="c072">
+        <item>法属圭亚那</item>
+        <item>French Guiana</item>
+        <item>594</item>
+        <item>GF</item>
+    </string-array>
+    <string-array name="c073">
+        <item>法属波利尼西亚</item>
+        <item>French Polynesia</item>
+        <item>689</item>
+        <item>PF</item>
+    </string-array>
+    <string-array name="c074">
+        <item>加蓬共和国</item>
+        <item>Gabon</item>
+        <item>241</item>
+        <item>GA</item>
+    </string-array>
+    <string-array name="c075">
+        <item>冈比亚</item>
+        <item>The Gambia</item>
+        <item>220</item>
+        <item>GM</item>
+    </string-array>
+    <string-array name="c076">
+        <item>格鲁吉亚</item>
+        <item>Georgia</item>
+        <item>995</item>
+        <item>GE</item>
+    </string-array>
+    <string-array name="c077">
+        <item>德国</item>
+        <item>Germany</item>
+        <item>49</item>
+        <item>DE</item>
+    </string-array>
+    <string-array name="c078">
+        <item>加纳</item>
+        <item>Ghana</item>
+        <item>233</item>
+        <item>GH</item>
+    </string-array>
+    <string-array name="c079">
+        <item>直布罗陀</item>
+        <item>Gibraltar</item>
+        <item>350</item>
+        <item>GI</item>
+    </string-array>
+    <string-array name="c080">
+        <item>希腊</item>
+        <item>Greece</item>
+        <item>30</item>
+        <item>GR</item>
+    </string-array>
+    <string-array name="c081">
+        <item>格陵兰</item>
+        <item>Greenland</item>
+        <item>299</item>
+        <item>GL</item>
+    </string-array>
+    <string-array name="c082">
+        <item>格林纳达岛</item>
+        <item>Grenada</item>
+        <item>1473</item>
+        <item>GD</item>
+    </string-array>
+    <string-array name="c083">
+        <item>瓜德罗普</item>
+        <item>Guadeloupe</item>
+        <item>590</item>
+        <item>GP</item>
+    </string-array>
+    <string-array name="c084">
+        <item>关岛</item>
+        <item>Guam</item>
+        <item>1671</item>
+        <item>GU</item>
+    </string-array>
+    <string-array name="c085">
+        <item>危地马拉</item>
+        <item>Guatemala</item>
+        <item>502</item>
+        <item>GT</item>
+    </string-array>
+    <string-array name="c086">
+        <item>几内亚</item>
+        <item>Guinea</item>
+        <item>224</item>
+        <item>GN</item>
+    </string-array>
+    <string-array name="c087">
+        <item>几内亚比绍共和国</item>
+        <item>Guinea-Bissau</item>
+        <item>245</item>
+        <item>GW</item>
+    </string-array>
+    <string-array name="c088">
+        <item>圭亚那</item>
+        <item>Guyana</item>
+        <item>592</item>
+        <item>GY</item>
+    </string-array>
+    <string-array name="c089">
+        <item>海地</item>
+        <item>Haiti</item>
+        <item>509</item>
+        <item>HT</item>
+    </string-array>
+    <string-array name="c090">
+        <item>洪都拉斯</item>
+        <item>Honduras</item>
+        <item>504</item>
+        <item>HN</item>
+    </string-array>
+    <string-array name="c091">
+        <item>中国香港特别行政区</item>
+        <item>Hong Kong</item>
+        <item>852</item>
+        <item>HK</item>
+    </string-array>
+    <string-array name="c092">
+        <item>匈牙利</item>
+        <item>Hungary</item>
+        <item>36</item>
+        <item>HU</item>
+    </string-array>
+    <string-array name="c093">
+        <item>冰岛</item>
+        <item>Iceland</item>
+        <item>354</item>
+        <item>IS</item>
+    </string-array>
+    <string-array name="c094">
+        <item>印度</item>
+        <item>India</item>
+        <item>91</item>
+        <item>IN</item>
+    </string-array>
+    <string-array name="c095">
+        <item>印度尼西亚</item>
+        <item>Indonesia</item>
+        <item>62</item>
+        <item>ID</item>
+    </string-array>
+    <string-array name="c096">
+        <item>伊朗</item>
+        <item>Iran</item>
+        <item>98</item>
+        <item>IR</item>
+    </string-array>
+    <string-array name="c097">
+        <item>伊拉克</item>
+        <item>Iraq</item>
+        <item>964</item>
+        <item>IQ</item>
+    </string-array>
+    <string-array name="c098">
+        <item>爱尔兰</item>
+        <item>Ireland</item>
+        <item>353</item>
+        <item>IE</item>
+    </string-array>
+    <string-array name="c099">
+        <item>以色列</item>
+        <item>Israel</item>
+        <item>972</item>
+        <item>IL</item>
+    </string-array>
+    <string-array name="c100">
+        <item>意大利</item>
+        <item>Italy</item>
+        <item>39</item>
+        <item>IT</item>
+    </string-array>
+    <string-array name="c101">
+        <item>牙买加</item>
+        <item>Jamaica</item>
+        <item>1876</item>
+        <item>JM</item>
+    </string-array>
+    <string-array name="c102">
+        <item>日本</item>
+        <item>Japan</item>
+        <item>81</item>
+        <item>JP</item>
+    </string-array>
+    <string-array name="c103">
+        <item>约旦</item>
+        <item>Jordan</item>
+        <item>962</item>
+        <item>JO</item>
+    </string-array>
+    <string-array name="c104">
+        <item>哈萨克斯坦</item>
+        <item>Kazakhstan</item>
+        <item>7</item>
+        <item>KZ</item>
+    </string-array>
+    <string-array name="c105">
+        <item>肯尼亚</item>
+        <item>Kenya</item>
+        <item>254</item>
+        <item>KE</item>
+    </string-array>
+    <string-array name="c106">
+        <item>基里巴斯</item>
+        <item>Kiribati</item>
+        <item>686</item>
+        <item>KI</item>
+    </string-array>
+    <string-array name="c107">
+        <item>科威特</item>
+        <item>Kuwait</item>
+        <item>965</item>
+        <item>KW</item>
+    </string-array>
+    <string-array name="c108">
+        <item>吉尔吉斯斯坦</item>
+        <item>Kyrgyzstan</item>
+        <item>996</item>
+        <item>KG</item>
+    </string-array>
+    <string-array name="c109">
+        <item>老挝</item>
+        <item>Laos</item>
+        <item>856</item>
+        <item>LA</item>
+    </string-array>
+    <string-array name="c110">
+        <item>拉脱维亚</item>
+        <item>Latvia</item>
+        <item>371</item>
+        <item>LV</item>
+    </string-array>
+    <string-array name="c111">
+        <item>黎巴嫩</item>
+        <item>Lebanon</item>
+        <item>961</item>
+        <item>LB</item>
+    </string-array>
+    <string-array name="c112">
+        <item>莱索托</item>
+        <item>Lesotho</item>
+        <item>266</item>
+        <item>LS</item>
+    </string-array>
+    <string-array name="c113">
+        <item>利比里亚</item>
+        <item>Liberia</item>
+        <item>231</item>
+        <item>LR</item>
+    </string-array>
+    <string-array name="c114">
+        <item>利比亚</item>
+        <item>Libya</item>
+        <item>218</item>
+        <item>LY</item>
+    </string-array>
+    <string-array name="c115">
+        <item>列支敦士登</item>
+        <item>Liechtenstein</item>
+        <item>423</item>
+        <item>LI</item>
+    </string-array>
+    <string-array name="c116">
+        <item>立陶宛</item>
+        <item>Lithuania</item>
+        <item>370</item>
+        <item>LT</item>
+    </string-array>
+    <string-array name="c117">
+        <item>卢森堡</item>
+        <item>Luxembourg</item>
+        <item>352</item>
+        <item>LU</item>
+    </string-array>
+    <string-array name="c118">
+        <item>中国澳门特别行政区</item>
+        <item>Macau</item>
+        <item>853</item>
+        <item>MO</item>
+    </string-array>
+    <string-array name="c119">
+        <item>马其顿</item>
+        <item>Macedonia</item>
+        <item>389</item>
+        <item>MK</item>
+    </string-array>
+    <string-array name="c120">
+        <item>马达加斯加</item>
+        <item>Madagascar</item>
+        <item>261</item>
+        <item>MG</item>
+    </string-array>
+    <string-array name="c121">
+        <item>马拉维</item>
+        <item>Malawi</item>
+        <item>265</item>
+        <item>MW</item>
+    </string-array>
+    <string-array name="c122">
+        <item>马来西亚</item>
+        <item>Malaysia</item>
+        <item>60</item>
+        <item>MY</item>
+    </string-array>
+    <string-array name="c123">
+        <item>马尔代夫</item>
+        <item>Maldives</item>
+        <item>960</item>
+        <item>MV</item>
+    </string-array>
+    <string-array name="c124">
+        <item>马里</item>
+        <item>Mali</item>
+        <item>223</item>
+        <item>ML</item>
+    </string-array>
+    <string-array name="c125">
+        <item>马耳他</item>
+        <item>Malta</item>
+        <item>356</item>
+        <item>MT</item>
+    </string-array>
+    <string-array name="c126">
+        <item>马绍尔群岛</item>
+        <item>Marshall Islands</item>
+        <item>692</item>
+        <item>MH</item>
+    </string-array>
+    <string-array name="c127">
+        <item>马提尼克</item>
+        <item>Martinique</item>
+        <item>596</item>
+        <item>MQ</item>
+    </string-array>
+    <string-array name="c128">
+        <item>毛里塔尼亚</item>
+        <item>Mauritania</item>
+        <item>222</item>
+        <item>MR</item>
+    </string-array>
+    <string-array name="c129">
+        <item>毛里求斯</item>
+        <item>Mauritius</item>
+        <item>230</item>
+        <item>MU</item>
+    </string-array>
+    <string-array name="c130">
+        <item>墨西哥</item>
+        <item>Mexico</item>
+        <item>52</item>
+        <item>MX</item>
+    </string-array>
+    <string-array name="c131">
+        <item>密克罗尼西亚联邦</item>
+        <item>Federated States of Micronesia</item>
+        <item>691</item>
+        <item>FM</item>
+    </string-array>
+    <string-array name="c132">
+        <item>摩尔多瓦</item>
+        <item>Moldova</item>
+        <item>373</item>
+        <item>MD</item>
+    </string-array>
+    <string-array name="c133">
+        <item>摩纳哥</item>
+        <item>Monaco</item>
+        <item>377</item>
+        <item>MC</item>
+    </string-array>
+    <string-array name="c134">
+        <item>蒙古</item>
+        <item>Mongolia</item>
+        <item>976</item>
+        <item>MN</item>
+    </string-array>
+    <string-array name="c135">
+        <item>黑山共和国</item>
+        <item>Montenegro</item>
+        <item>382</item>
+        <item>ME</item>
+    </string-array>
+    <string-array name="c136">
+        <item>蒙特塞拉特</item>
+        <item>Montserrat</item>
+        <item>1664</item>
+        <item>MS</item>
+    </string-array>
+    <string-array name="c137">
+        <item>摩洛哥</item>
+        <item>Morocco</item>
+        <item>212</item>
+        <item>MA</item>
+    </string-array>
+    <string-array name="c138">
+        <item>莫桑比克</item>
+        <item>Mozambique</item>
+        <item>258</item>
+        <item>MZ</item>
+    </string-array>
+    <string-array name="c139">
+        <item>缅甸</item>
+        <item>Myanmar</item>
+        <item>95</item>
+        <item>MM</item>
+    </string-array>
+    <string-array name="c140">
+        <item>纳米比亚</item>
+        <item>Namibia</item>
+        <item>264</item>
+        <item>NA</item>
+    </string-array>
+    <string-array name="c141">
+        <item>瑙鲁</item>
+        <item>Nauru</item>
+        <item>674</item>
+        <item>NR</item>
+    </string-array>
+    <string-array name="c142">
+        <item>尼泊尔</item>
+        <item>Nepal</item>
+        <item>977</item>
+        <item>NP</item>
+    </string-array>
+    <string-array name="c143">
+        <item>荷兰</item>
+        <item>Netherlands</item>
+        <item>31</item>
+        <item>NL</item>
+    </string-array>
+    <string-array name="c144">
+        <item>新喀里多尼亚</item>
+        <item>New Caledonia</item>
+        <item>687</item>
+        <item>NC</item>
+    </string-array>
+    <string-array name="c145">
+        <item>新西兰</item>
+        <item>New Zealand</item>
+        <item>64</item>
+        <item>NZ</item>
+    </string-array>
+    <string-array name="c146">
+        <item>尼加拉瓜</item>
+        <item>Nicaragua</item>
+        <item>505</item>
+        <item>NI</item>
+    </string-array>
+    <string-array name="c147">
+        <item>尼日尔</item>
+        <item>Niger</item>
+        <item>227</item>
+        <item>NE</item>
+    </string-array>
+    <string-array name="c148">
+        <item>尼日利亚</item>
+        <item>Nigeria</item>
+        <item>234</item>
+        <item>NG</item>
+    </string-array>
+    <string-array name="c149">
+        <item>纽埃</item>
+        <item>Niue</item>
+        <item>683</item>
+        <item>NU</item>
+    </string-array>
+    <string-array name="c150">
+        <item>诺福克群岛</item>
+        <item>Norfolk Island</item>
+        <item>672</item>
+        <item>NF</item>
+    </string-array>
+    <string-array name="c151">
+        <item>朝鲜</item>
+        <item>North Korea</item>
+        <item>850</item>
+        <item>KP</item>
+    </string-array>
+    <string-array name="c152">
+        <item>北马里亚纳群岛</item>
+        <item>Northern Mariana Islands</item>
+        <item>1670</item>
+        <item>MP</item>
+    </string-array>
+    <string-array name="c153">
+        <item>挪威</item>
+        <item>Norway</item>
+        <item>47</item>
+        <item>NO</item>
+    </string-array>
+    <string-array name="c154">
+        <item>阿曼</item>
+        <item>Oman</item>
+        <item>968</item>
+        <item>OM</item>
+    </string-array>
+    <string-array name="c155">
+        <item>巴基斯坦</item>
+        <item>Pakistan</item>
+        <item>92</item>
+        <item>PK</item>
+    </string-array>
+    <string-array name="c156">
+        <item>帛琉</item>
+        <item>Palau</item>
+        <item>680</item>
+        <item>PW</item>
+    </string-array>
+    <string-array name="c157">
+        <item>巴勒斯坦</item>
+        <item>Palestine</item>
+        <item>970</item>
+        <item>PS</item>
+    </string-array>
+    <string-array name="c158">
+        <item>巴拿马</item>
+        <item>Panama</item>
+        <item>507</item>
+        <item>PA</item>
+    </string-array>
+    <string-array name="c159">
+        <item>巴布亚新几内亚</item>
+        <item>Papua New Guinea</item>
+        <item>675</item>
+        <item>PG</item>
+    </string-array>
+    <string-array name="c160">
+        <item>巴拉圭</item>
+        <item>Paraguay</item>
+        <item>595</item>
+        <item>PY</item>
+    </string-array>
+    <string-array name="c161">
+        <item>秘鲁</item>
+        <item>Peru</item>
+        <item>51</item>
+        <item>PE</item>
+    </string-array>
+    <string-array name="c162">
+        <item>菲律宾</item>
+        <item>Philippines</item>
+        <item>63</item>
+        <item>PH</item>
+    </string-array>
+    <string-array name="c163">
+        <item>波兰</item>
+        <item>Poland</item>
+        <item>48</item>
+        <item>PL</item>
+    </string-array>
+    <string-array name="c164">
+        <item>葡萄牙</item>
+        <item>Portugal</item>
+        <item>351</item>
+        <item>PT</item>
+    </string-array>
+    <string-array name="c165">
+        <item>波多黎各</item>
+        <item>Puerto Rico</item>
+        <item>1</item>
+        <item>PR</item>
+    </string-array>
+    <string-array name="c166">
+        <item>卡塔尔</item>
+        <item>Qatar</item>
+        <item>974</item>
+        <item>QA</item>
+    </string-array>
+    <string-array name="c167">
+        <item>留尼汪</item>
+        <item>Réunion</item>
+        <item>262</item>
+        <item>RE</item>
+    </string-array>
+    <string-array name="c168">
+        <item>罗马尼亚</item>
+        <item>Romania</item>
+        <item>40</item>
+        <item>RO</item>
+    </string-array>
+    <string-array name="c169">
+        <item>俄罗斯</item>
+        <item>Russia</item>
+        <item>7</item>
+        <item>RU</item>
+    </string-array>
+    <string-array name="c170">
+        <item>卢旺达</item>
+        <item>Rwanda</item>
+        <item>250</item>
+        <item>RW</item>
+    </string-array>
+    <string-array name="c171">
+        <item>圣巴泰勒米</item>
+        <item>Saint Barthélemy</item>
+        <item>590</item>
+        <item>BL</item>
+    </string-array>
+    <string-array name="c172">
+        <item>圣赫勒拿</item>
+        <item>Saint Helena</item>
+        <item>290</item>
+        <item>SH</item>
+    </string-array>
+    <string-array name="c173">
+        <item>圣基茨和尼维斯</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>1869</item>
+        <item>KN</item>
+    </string-array>
+    <string-array name="c174">
+        <item>圣卢西亚</item>
+        <item>Saint Lucia</item>
+        <item>1758</item>
+        <item>LC</item>
+    </string-array>
+    <string-array name="c175">
+        <item>法属圣马丁</item>
+        <item>Saint Martin</item>
+        <item>590</item>
+        <item>MF</item>
+    </string-array>
+    <string-array name="c176">
+        <item>法属圣皮埃尔和密克隆岛</item>
+        <item>Saint Pierre and Miquelon</item>
+        <item>508</item>
+        <item>PM</item>
+    </string-array>
+    <string-array name="c177">
+        <item>圣文森特和格林纳丁斯</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>1784</item>
+        <item>VC</item>
+    </string-array>
+    <string-array name="c178">
+        <item>萨摩亚</item>
+        <item>Samoa</item>
+        <item>685</item>
+        <item>WS</item>
+    </string-array>
+    <string-array name="c179">
+        <item>圣马力诺</item>
+        <item>San Marino</item>
+        <item>378</item>
+        <item>SM</item>
+    </string-array>
+    <string-array name="c180">
+        <item>圣多美和普林西比民主共和国</item>
+        <item>São Tomé and Príncipe</item>
+        <item>239</item>
+        <item>ST</item>
+    </string-array>
+    <string-array name="c181">
+        <item>沙特阿拉伯</item>
+        <item>Saudi Arabia</item>
+        <item>966</item>
+        <item>SA</item>
+    </string-array>
+    <string-array name="c182">
+        <item>塞内加尔</item>
+        <item>Senegal</item>
+        <item>221</item>
+        <item>SN</item>
+    </string-array>
+    <string-array name="c183">
+        <item>塞尔维亚</item>
+        <item>Serbia</item>
+        <item>381</item>
+        <item>RS</item>
+    </string-array>
+    <string-array name="c184">
+        <item>塞舌尔</item>
+        <item>Seychelles</item>
+        <item>248</item>
+        <item>SC</item>
+    </string-array>
+    <string-array name="c185">
+        <item>塞拉利昂</item>
+        <item>Sierra Leone</item>
+        <item>232</item>
+        <item>SL</item>
+    </string-array>
+    <string-array name="c186">
+        <item>新加坡</item>
+        <item>Singapore</item>
+        <item>65</item>
+        <item>SG</item>
+    </string-array>
+    <string-array name="c187">
+        <item>荷属圣马丁</item>
+        <item>Sint Maarten</item>
+        <item>1721</item>
+        <item>SX</item>
+    </string-array>
+    <string-array name="c188">
+        <item>斯洛伐克</item>
+        <item>Slovakia</item>
+        <item>421</item>
+        <item>SK</item>
+    </string-array>
+    <string-array name="c189">
+        <item>斯洛文尼亚</item>
+        <item>Slovenia</item>
+        <item>386</item>
+        <item>SI</item>
+    </string-array>
+    <string-array name="c190">
+        <item>所罗门群岛</item>
+        <item>Solomon Islands</item>
+        <item>677</item>
+        <item>SB</item>
+    </string-array>
+    <string-array name="c191">
+        <item>索马里</item>
+        <item>Somalia</item>
+        <item>252</item>
+        <item>SO</item>
+    </string-array>
+    <string-array name="c192">
+        <item>南非</item>
+        <item>South Africa</item>
+        <item>27</item>
+        <item>ZA</item>
+    </string-array>
+    <string-array name="c193">
+        <item>韩国</item>
+        <item>South Korea</item>
+        <item>82</item>
+        <item>KR</item>
+    </string-array>
+    <string-array name="c194">
+        <item>南苏丹</item>
+        <item>South Sudan</item>
+        <item>211</item>
+        <item>SS</item>
+    </string-array>
+    <string-array name="c195">
+        <item>西班牙</item>
+        <item>Spain</item>
+        <item>34</item>
+        <item>ES</item>
+    </string-array>
+    <string-array name="c196">
+        <item>斯里兰卡</item>
+        <item>Sri Lanka</item>
+        <item>94</item>
+        <item>LK</item>
+    </string-array>
+    <string-array name="c197">
+        <item>苏丹</item>
+        <item>Sudan</item>
+        <item>249</item>
+        <item>SD</item>
+    </string-array>
+    <string-array name="c198">
+        <item>苏里南</item>
+        <item>Suriname</item>
+        <item>597</item>
+        <item>SR</item>
+    </string-array>
+    <string-array name="c199">
+        <item>斯威士兰</item>
+        <item>Swaziland</item>
+        <item>268</item>
+        <item>SZ</item>
+    </string-array>
+    <string-array name="c200">
+        <item>瑞典</item>
+        <item>Sweden</item>
+        <item>46</item>
+        <item>SE</item>
+    </string-array>
+    <string-array name="c201">
+        <item>瑞士</item>
+        <item>Switzerland</item>
+        <item>41</item>
+        <item>CH</item>
+    </string-array>
+    <string-array name="c202">
+        <item>叙利亚</item>
+        <item>Syria</item>
+        <item>963</item>
+        <item>SY</item>
+    </string-array>
+    <string-array name="c203">
+        <item>中国台湾</item>
+        <item>Taiwan</item>
+        <item>886</item>
+        <item>TW</item>
+    </string-array>
+    <string-array name="c204">
+        <item>塔吉克斯坦</item>
+        <item>Tajikistan</item>
+        <item>992</item>
+        <item>TJ</item>
+    </string-array>
+    <string-array name="c205">
+        <item>坦桑尼亚</item>
+        <item>Tanzania</item>
+        <item>255</item>
+        <item>TZ</item>
+    </string-array>
+    <string-array name="c206">
+        <item>泰国</item>
+        <item>Thailand</item>
+        <item>66</item>
+        <item>TH</item>
+    </string-array>
+    <string-array name="c207">
+        <item>东帝汶</item>
+        <item>Timor-Leste</item>
+        <item>670</item>
+        <item>TL</item>
+    </string-array>
+    <string-array name="c208">
+        <item>多哥</item>
+        <item>Togo</item>
+        <item>228</item>
+        <item>TG</item>
+    </string-array>
+    <string-array name="c209">
+        <item>托克劳</item>
+        <item>Tokelau</item>
+        <item>690</item>
+        <item>TK</item>
+    </string-array>
+    <string-array name="c210">
+        <item>汤加</item>
+        <item>Tonga</item>
+        <item>676</item>
+        <item>TO</item>
+    </string-array>
+    <string-array name="c211">
+        <item>特立尼达和多巴哥</item>
+        <item>Trinidad and Tobago</item>
+        <item>1868</item>
+        <item>TT</item>
+    </string-array>
+    <string-array name="c212">
+        <item>突尼斯</item>
+        <item>Tunisia</item>
+        <item>216</item>
+        <item>TN</item>
+    </string-array>
+    <string-array name="c213">
+        <item>土耳其</item>
+        <item>Turkey</item>
+        <item>90</item>
+        <item>TR</item>
+    </string-array>
+    <string-array name="c214">
+        <item>土库曼斯坦</item>
+        <item>Turkmenistan</item>
+        <item>993</item>
+        <item>TM</item>
+    </string-array>
+    <string-array name="c215">
+        <item>特克斯和凯科斯群岛</item>
+        <item>Turks and Caicos Islands</item>
+        <item>1649</item>
+        <item>TC</item>
+    </string-array>
+    <string-array name="c216">
+        <item>图瓦卢</item>
+        <item>Tuvalu</item>
+        <item>688</item>
+        <item>TV</item>
+    </string-array>
+    <string-array name="c217">
+        <item>美属维京群岛</item>
+        <item>U.S. Virgin Islands</item>
+        <item>1340</item>
+        <item>VI</item>
+    </string-array>
+    <string-array name="c218">
+        <item>乌干达</item>
+        <item>Uganda</item>
+        <item>256</item>
+        <item>UG</item>
+    </string-array>
+    <string-array name="c219">
+        <item>乌克兰</item>
+        <item>Ukraine</item>
+        <item>380</item>
+        <item>UA</item>
+    </string-array>
+    <string-array name="c220">
+        <item>阿联酋</item>
+        <item>United Arab Emirates</item>
+        <item>971</item>
+        <item>AE</item>
+    </string-array>
+    <string-array name="c221">
+        <item>英国</item>
+        <item>United Kingdom</item>
+        <item>44</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="c222">
+        <item>美国</item>
+        <item>United States</item>
+        <item>1</item>
+        <item>US</item>
+    </string-array>
+    <string-array name="c223">
+        <item>乌拉圭</item>
+        <item>Uruguay</item>
+        <item>598</item>
+        <item>UY</item>
+    </string-array>
+    <string-array name="c224">
+        <item>乌兹别克斯坦</item>
+        <item>Uzbekistan</item>
+        <item>998</item>
+        <item>UZ</item>
+    </string-array>
+    <string-array name="c225">
+        <item>瓦努阿图</item>
+        <item>Vanuatu</item>
+        <item>678</item>
+        <item>VU</item>
+    </string-array>
+    <string-array name="c226">
+        <item>梵蒂冈城</item>
+        <item>Vatican City</item>
+        <item>39</item>
+        <item>VA</item>
+    </string-array>
+    <string-array name="c227">
+        <item>委内瑞拉</item>
+        <item>Venezuela</item>
+        <item>58</item>
+        <item>VE</item>
+    </string-array>
+    <string-array name="c228">
+        <item>越南</item>
+        <item>Vietnam</item>
+        <item>84</item>
+        <item>VN</item>
+    </string-array>
+    <string-array name="c229">
+        <item>瓦利斯和富图纳</item>
+        <item>Wallis and Futuna</item>
+        <item>681</item>
+        <item>WF</item>
+    </string-array>
+    <string-array name="c230">
+        <item>也门</item>
+        <item>Yemen</item>
+        <item>967</item>
+        <item>YE</item>
+    </string-array>
+    <string-array name="c231">
+        <item>赞比亚</item>
+        <item>Zambia</item>
+        <item>260</item>
+        <item>ZM</item>
+    </string-array>
+    <string-array name="c232">
+        <item>津巴布韦</item>
+        <item>Zimbabwe</item>
+        <item>263</item>
+        <item>ZW</item>
+    </string-array>
+    <string-array name="c233">
+        <item>根西</item>
+        <item>Guernsey</item>
+        <item>44</item>
+        <item>GG</item>
+    </string-array>
+    <string-array name="c234">
+        <item>科索沃</item>
+        <item>Kosovo</item>
+        <item>381</item>
+        <item>XK</item>
+    </string-array>
+    <string-array name="c235">
+        <item>马恩</item>
+        <item>Isle Of Man</item>
+        <item>44</item>
+        <item>IM</item>
+    </string-array>
+    <string-array name="c236">
+        <item>马约特</item>
+        <item>Mayotte</item>
+        <item>262</item>
+        <item>YT</item>
+    </string-array>
+    <string-array name="c237">
+        <item>西撒哈拉</item>
+        <item>Western Sahara</item>
+        <item>212</item>
+        <item>EH</item>
+    </string-array>
+    <string-array name="c238">
+        <item>泽西</item>
+        <item>Jersey</item>
+        <item>44</item>
+        <item>JE</item>
+    </string-array>
 </resources>

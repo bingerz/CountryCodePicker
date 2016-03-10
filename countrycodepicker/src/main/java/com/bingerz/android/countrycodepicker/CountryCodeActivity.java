@@ -1,21 +1,13 @@
 package com.bingerz.android.countrycodepicker;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
 import android.app.Activity;
 import android.content.Intent;
-import android.os.AsyncTask;
+import android.content.res.Resources;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -39,7 +31,7 @@ public class CountryCodeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_country_code);
         initView();
-        new parseCountryCodeTask().execute("countryCode.json");
+        parseCountryCodeData();
     }
 
     private void initView() {
@@ -71,65 +63,36 @@ public class CountryCodeActivity extends Activity {
         });
     }
 
-    private ArrayList<CountryCode> getCountryCodeListFromJsonString(String data) {
-        if (TextUtils.isEmpty(data)) {
-            return null;
-        }
-        Type listType = new TypeToken<ArrayList<CountryCode>>(){}.getType();
-        return new Gson().fromJson(data, listType);
-    }
-
-    private class parseCountryCodeTask extends AsyncTask<String, Void, ArrayList<CountryCode>> {
-
-        @Override
-        protected ArrayList<CountryCode> doInBackground(String[] params) {
-            StringBuilder text = new StringBuilder();
-            BufferedReader reader = null;
-            try {
-                InputStreamReader in = new InputStreamReader(getAssets().open(params[0]), "UTF-8");
-                reader = new BufferedReader(in);
-                String line;
-                while ((line = reader.readLine()) != null) {
-                    text.append(line);
-                    text.append('\n');
-                }
-            } catch (IOException e) {
-                //log the exception
-            } finally {
-                if (reader != null) {
-                    try {
-                        reader.close();
-                    } catch (IOException e) {
-                        //log the exception
-                    }
-                }
-                ArrayList<CountryCode> data = getCountryCodeListFromJsonString(text.toString());
-                if (data != null && !data.isEmpty()) {
-                    for (CountryCode country : data) {
-                        if (Locale.getDefault().getCountry().equals(Locale.CHINA.getCountry())) {
-                            country.setSortLettersCn();
-                        } else {
-                            country.setSortLettersEn();
-                        }
-                    }
-                    Collections.sort(data, new PinyinComparator());
-                }
-                return data;
+    private void parseCountryCodeData() {
+        ArrayList<CountryCode> countryCodes = new ArrayList<>();
+        try {
+            for (int i = 0; i <= 238; i++) {
+                String fileName = String.format("c%03d", i);
+                int mResId = getResources().getIdentifier(fileName, "array", getPackageName());
+                String[] codeArray = getResources().getStringArray(mResId);
+                int code = Integer.parseInt(codeArray[2]);
+                countryCodes
+                        .add(new CountryCode(i, codeArray[0], codeArray[1], codeArray[3], code));
             }
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        } catch (Resources.NotFoundException e) {
+            e.printStackTrace();
         }
 
-        @Override
-        protected void onProgressUpdate(Void... values) {
-            super.onProgressUpdate(values);
-        }
-
-        @Override
-        protected void onPostExecute(ArrayList<CountryCode> countries) {
-            if (countries != null && !countries.isEmpty()) {
-                mCountryCodes.clear();
-                mCountryCodes.addAll(countries);
-                mAdapter.notifyDateAll(countries);
+        if (!countryCodes.isEmpty()) {
+            for (CountryCode country : countryCodes) {
+                if (Locale.getDefault().getCountry().equals(Locale.CHINA.getCountry())) {
+                    country.setSortLettersCn();
+                } else {
+                    country.setSortLettersEn();
+                }
             }
+            Collections.sort(countryCodes, new PinyinComparator());
+
+            mCountryCodes.clear();
+            mCountryCodes.addAll(countryCodes);
+            mAdapter.notifyDateAll(countryCodes);
         }
     }
 

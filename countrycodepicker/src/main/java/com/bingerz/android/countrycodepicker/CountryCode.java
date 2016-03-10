@@ -11,8 +11,6 @@
 
 package com.bingerz.android.countrycodepicker;
 
-import com.google.gson.annotations.SerializedName;
-
 import com.github.promeg.pinyinhelper.Pinyin;
 
 import android.os.Parcel;
@@ -21,19 +19,14 @@ import android.text.TextUtils;
 
 public class CountryCode implements Parcelable {
 
-    @SerializedName("flag_id")
     public int mFlagId;
 
-    @SerializedName("name_cn")
     public String mNameCn;
 
-    @SerializedName("name_en")
     public String mNameEn;
 
-    @SerializedName("country_code")
     public int mCountryCode;
 
-    @SerializedName("region_code")
     public String mRegionCode;
 
     public int mPriority;
