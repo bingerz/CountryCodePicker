@@ -11,8 +11,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final static int REQUEST_CODE_PICKER = 64;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CountryCodePicker picker = new CountryCodePicker();
-                picker.start(MainActivity.this, REQUEST_CODE_PICKER);
+                picker.start(MainActivity.this);
             }
         });
     }
@@ -30,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
-            case REQUEST_CODE_PICKER:
+            case CountryCodePicker.REQUEST_CODE_PICKER:
                 if (data == null) {
                     Toast.makeText(this, "Country is null", Toast.LENGTH_SHORT).show();
                     return;

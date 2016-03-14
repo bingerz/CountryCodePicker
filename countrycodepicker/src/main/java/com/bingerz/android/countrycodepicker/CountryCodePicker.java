@@ -9,17 +9,17 @@ import android.content.Intent;
  */
 public class CountryCodePicker {
 
-    private Intent mIntent;
-
     public static String EXTRA_CODE = "countryCode";
 
+    public final static int REQUEST_CODE_PICKER = 604;
+
     public Intent getIntent(Context context) {
-        mIntent = new Intent();
+        Intent mIntent = new Intent();
         mIntent.setClass(context, CountryCodeActivity.class);
         return mIntent;
     }
 
-    public void start(Activity activity, int requestCode) {
-        activity.startActivityForResult(getIntent(activity), requestCode);
+    public void start(Activity activity) {
+        activity.startActivityForResult(getIntent(activity), REQUEST_CODE_PICKER);
     }
 }
