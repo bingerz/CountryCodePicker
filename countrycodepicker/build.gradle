@@ -2,30 +2,6 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'country-code-picker'
-
-    publishedGroupId = 'com.bingerz.android'
-    libraryName = 'CountryCodePicker'
-    artifact = 'countrycodepicker'
-
-    libraryDescription = 'Android library project for country code picker'
-
-    siteUrl = 'https://github.com/bingerz/CountryCodePicker'
-    gitUrl = 'https://github.com/bingerz/CountryCodePicker.git'
-
-    libraryVersion = '0.2.0'
-
-    developerId = 'bingerz'
-    developerName = 'binger zi'
-    developerEmail = 'hanbing0604@gmail.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
-
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
@@ -33,8 +9,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 23
-        versionCode 2
-        versionName "0.2.0"
+        versionCode 4
+        versionName "0.4.0"
     }
     buildTypes {
         release {
