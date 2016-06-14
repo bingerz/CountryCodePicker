@@ -11,10 +11,27 @@
     tools:context="com.bingerz.android.countrycodepicker.example.MainActivity">
 
     <TextView
+        android:id="@+id/tv_activity_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How to use in Activity:"
+        android:textSize="20dp"/>
+
+    <TextView
         android:id="@+id/tv_start_picker"
-        android:text="点击选择国家代码"
+        android:text="Click to choose code."
         android:layout_width="200dp"
         android:layout_height="40dp"
+        android:layout_below="@id/tv_activity_hint"
+        android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_centerInParent="true"/>
+        android:layout_marginTop="10dp"
+        android:textSize="20dp" />
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_start_picker"/>
 </RelativeLayout>

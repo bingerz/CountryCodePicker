@@ -1,13 +1,13 @@
 package com.bingerz.android.countrycodepicker.example;
 
-import com.bingerz.android.countrycodepicker.CountryCode;
-import com.bingerz.android.countrycodepicker.CountryCodePicker;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
+
+import com.bingerz.android.countrycodepicker.CountryCode;
+import com.bingerz.android.countrycodepicker.CountryCodePicker;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
                 picker.start(MainActivity.this);
             }
         });
+
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.content, new ChooseCountryCodeFragment(), "choose").commit();
     }
 
     @Override
@@ -35,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 CountryCode countryCode = data.getParcelableExtra(CountryCodePicker.EXTRA_CODE);
                 if (countryCode != null) {
-                    Toast.makeText(this, countryCode.mCountryCode + "", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Activity:" + countryCode.mCountryCode, Toast.LENGTH_SHORT).show();
                 }
                 break;
         }
