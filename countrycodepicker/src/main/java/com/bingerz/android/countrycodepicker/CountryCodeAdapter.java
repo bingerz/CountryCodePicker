@@ -16,15 +16,15 @@ import java.util.Locale;
 
 public class CountryCodeAdapter extends BaseAdapter implements SectionIndexer {
 
-    private Context ctx;
+    private Context mContext;
 
     private LayoutInflater mInflater;
 
     private ArrayList<CountryCode> mDataList = new ArrayList<>();
 
     public CountryCodeAdapter(Context ctx) {
-        this.ctx = ctx;
-        mInflater = LayoutInflater.from(this.ctx);
+        this.mContext = ctx;
+        mInflater = LayoutInflater.from(this.mContext);
     }
 
     @Override
@@ -68,9 +68,9 @@ public class CountryCodeAdapter extends BaseAdapter implements SectionIndexer {
             holder.tvCatalog.setVisibility(View.GONE);
         }
         String fileName = String.format("f%03d", country.mFlagId);
-        int mResId = ctx.getResources().getIdentifier(fileName, "drawable", ctx.getPackageName());
+        int mResId = mContext.getResources().getIdentifier(fileName, "drawable", mContext.getPackageName());
         holder.ivCountryIcon.setImageResource(mResId);
-        if (Locale.getDefault().getCountry().equals(Locale.CHINA.getCountry())) {
+        if (Utils.getCountry(mContext).equals(Locale.CHINA.getCountry())) {
             holder.tvCountryName.setText(country.mNameCn);
         } else {
             holder.tvCountryName.setText(country.mNameEn);
