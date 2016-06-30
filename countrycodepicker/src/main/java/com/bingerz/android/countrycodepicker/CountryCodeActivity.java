@@ -82,7 +82,7 @@ public class CountryCodeActivity extends Activity {
 
         if (!countryCodes.isEmpty()) {
             for (CountryCode country : countryCodes) {
-                if (Locale.getDefault().getCountry().equals(Locale.CHINA.getCountry())) {
+                if (Utils.getCountry(this).equals(Locale.CHINA.getCountry())) {
                     country.setSortLettersCn();
                 } else {
                     country.setSortLettersEn();
