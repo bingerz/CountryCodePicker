@@ -45,7 +45,7 @@ buildscript {
   }
 
   dependencies {
-    compile 'com.bingerz.android:countrycodepicker:0.4.0'
+    compile 'com.bingerz.android:countrycodepicker:0.7.0'
   }
 }
 ```
@@ -58,3 +58,15 @@ buildscript {
 
 最初版本加载国家代码的数据是通过json文件，国家代码和国家名称等信息保存在json文件中。在略大的项目中，
 读取json文件过程会对IO造成阻塞，导致界面ANR，现在改为string-array的方式。
+
+## Release Changes
+### v0.7.0
+ - Support RTL
+### v0.6.1
+ - Bug fixs
+### v0.6.0
+ - Bug fixs
+### v0.5.0
+ - Bug fixs
+### v0.4.0
+ - Init First Commit
