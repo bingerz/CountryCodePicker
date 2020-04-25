@@ -67,12 +67,11 @@ public class CountryCodeActivity extends Activity {
         ArrayList<CountryCode> countryCodes = new ArrayList<>();
         try {
             for (int i = 0; i <= 238; i++) {
-                String fileName = String.format("c%03d", i);
+                String fileName = String.format(Locale.ENGLISH,"c%03d", i);
                 int mResId = getResources().getIdentifier(fileName, "array", getPackageName());
                 String[] codeArray = getResources().getStringArray(mResId);
                 int code = Integer.parseInt(codeArray[2]);
-                countryCodes
-                        .add(new CountryCode(i, codeArray[0], codeArray[1], codeArray[3], code));
+                countryCodes.add(new CountryCode(i, codeArray[0], codeArray[1], codeArray[3], code));
             }
         } catch (NumberFormatException e) {
             e.printStackTrace();

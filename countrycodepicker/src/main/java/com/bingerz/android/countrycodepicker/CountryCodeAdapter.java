@@ -67,7 +67,7 @@ public class CountryCodeAdapter extends BaseAdapter implements SectionIndexer {
         } else {
             holder.tvCatalog.setVisibility(View.GONE);
         }
-        String fileName = String.format("f%03d", country.mFlagId);
+        String fileName = String.format(Locale.ENGLISH, "f%03d", country.mFlagId);
         int mResId = mContext.getResources().getIdentifier(fileName, "drawable", mContext.getPackageName());
         holder.ivCountryIcon.setImageResource(mResId);
         if (Utils.getCountry(mContext).equals(Locale.CHINA.getCountry())) {
