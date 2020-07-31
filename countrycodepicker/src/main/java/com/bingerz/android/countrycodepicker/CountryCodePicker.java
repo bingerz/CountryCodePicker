@@ -8,7 +8,6 @@ import android.support.v4.app.Fragment;
 /**
  *
  * @author hanbing
- * @date 16/3/8
  */
 public class CountryCodePicker {
 

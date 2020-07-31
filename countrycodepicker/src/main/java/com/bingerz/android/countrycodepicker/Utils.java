@@ -8,7 +8,6 @@ import java.util.Locale;
 /**
  *
  * @author hanbing
- * @date 16/6/29
  */
 public class Utils {
 

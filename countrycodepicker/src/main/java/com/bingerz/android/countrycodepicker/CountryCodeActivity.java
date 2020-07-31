@@ -17,7 +17,6 @@ import java.util.Locale;
 /**
  *
  * @author hanbing
- * @date 15/5/13
  */
 public class CountryCodeActivity extends Activity {
 
