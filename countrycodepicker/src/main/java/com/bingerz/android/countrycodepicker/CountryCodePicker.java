@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.support.v4.app.Fragment;
 
 /**
- * Created by hanbing on 16/3/8.
+ *
+ * @author hanbing
+ * @date 16/3/8
  */
 public class CountryCodePicker {
 

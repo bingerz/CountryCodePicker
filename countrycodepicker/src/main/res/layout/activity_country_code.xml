@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:title="@string/app_name"
+        android:theme="@android:style/ThemeOverlay.Material.Light"
+        app:titleTextColor="@android:color/white" />
 
     <ListView
         android:id="@+id/lv_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize"
         android:dividerHeight="0dp"
         android:scrollbarSize="0dp" />
 
     <com.bingerz.android.countrycodepicker.SideBar
         android:id="@+id/sb_sidebar"
         android:layout_width="30dp"
-        android:layout_height="fill_parent"
-        android:background="@android:color/transparent"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true" />
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:layout_gravity="center_vertical|end"
+        android:background="@android:color/transparent" />
+</FrameLayout>

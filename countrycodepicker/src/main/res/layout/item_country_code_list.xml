@@ -1,59 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_catalog"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingStart="10dp"
+        android:layout_height="wrap_content"
         android:paddingTop="5dp"
-        android:paddingEnd="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
         android:background="#E0E0E0"
         android:textColor="#454545" />
 
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_height="wrap_content">
 
-        <ImageView android:id="@+id/iv_list_country_icon"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:src="@drawable/f000"
-            android:padding="10dp"
-            android:scaleType="center" />
-
-        <TextView android:id="@+id/tv_list_country_name"
+        <ImageView
+            android:id="@+id/iv_list_country_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@id/iv_list_country_icon"
-            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
+            android:scaleType="center"
+            tools:src="@drawable/f000"/>
+
+        <TextView
+            android:id="@+id/tv_list_country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="40dp"
+            android:paddingTop="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
             android:textSize="14sp"
-            android:textColor="#212121" />
+            android:textColor="#212121"
+            tools:text="China"/>
 
         <TextView
             android:id="@+id/tv_list_country_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="30dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="40dp"
             android:ellipsize="end"
             android:singleLine="true"
             android:textSize="14sp"
             android:textColor="#212121" />
 
         <View
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="1px"
-            android:layout_below="@id/tv_list_country_name"
+            android:layout_gravity="bottom"
             android:layout_marginTop="5dp"
-            android:background="#CCCCCC" />
-    </RelativeLayout>
+            android:layout_marginStart="20dp"
+            android:background="#14000000" />
+    </FrameLayout>
 </LinearLayout>

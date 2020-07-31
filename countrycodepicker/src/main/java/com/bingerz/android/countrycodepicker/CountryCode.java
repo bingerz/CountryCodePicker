@@ -17,6 +17,9 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
 
+/**
+ * @author hanson
+ */
 public class CountryCode implements Parcelable {
 
     public int mFlagId;
@@ -101,10 +104,12 @@ public class CountryCode implements Parcelable {
     }
 
     public static final Creator<CountryCode> CREATOR = new Creator<CountryCode>() {
+        @Override
         public CountryCode createFromParcel(Parcel source) {
             return new CountryCode(source);
         }
 
+        @Override
         public CountryCode[] newArray(int size) {
             return new CountryCode[size];
         }

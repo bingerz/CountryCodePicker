@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -14,11 +15,11 @@ import java.util.Comparator;
 import java.util.Locale;
 
 /**
- * Created by hanbing on 15/5/13.
+ *
+ * @author hanbing
+ * @date 15/5/13
  */
 public class CountryCodeActivity extends Activity {
-
-    private SideBar sideBar;
 
     private ListView mListView;
 
@@ -30,12 +31,22 @@ public class CountryCodeActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_country_code);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        if (toolbar != null) {
+            toolbar.setNavigationIcon(R.drawable.ic_actionbar_back_dark);
+            toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onBackPressed();
+                }
+            });
+        }
         initView();
         parseCountryCodeData();
     }
 
     private void initView() {
-        sideBar = (SideBar) findViewById(R.id.sb_sidebar);
+        SideBar sideBar = (SideBar) findViewById(R.id.sb_sidebar);
         sideBar.setOnTouchingLetterChangedListener(new SideBar.OnTouchingLetterChangedListener() {
 
             @Override
@@ -95,14 +106,13 @@ public class CountryCodeActivity extends Activity {
         }
     }
 
-    class PinyinComparator implements Comparator<CountryCode> {
+    static class PinyinComparator implements Comparator<CountryCode> {
 
+        @Override
         public int compare(CountryCode o1, CountryCode o2) {
-            if (o1.sortLetters.equals("@")
-                    || o2.sortLetters.equals("#")) {
+            if (o1.sortLetters.equals("@") || o2.sortLetters.equals("#")) {
                 return -1;
-            } else if (o1.sortLetters.equals("#")
-                    || o2.sortLetters.equals("@")) {
+            } else if (o1.sortLetters.equals("#") || o2.sortLetters.equals("@")) {
                 return 1;
             } else {
                 return o1.sortLetters.compareTo(o2.sortLetters);

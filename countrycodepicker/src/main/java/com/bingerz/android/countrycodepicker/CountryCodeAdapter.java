@@ -14,6 +14,9 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Locale;
 
+/**
+ * @author hanson
+ */
 public class CountryCodeAdapter extends BaseAdapter implements SectionIndexer {
 
     private Context mContext;
@@ -85,13 +88,9 @@ public class CountryCodeAdapter extends BaseAdapter implements SectionIndexer {
     }
 
     static final class ViewHolder {
-
         public TextView tvCatalog;
-
         public ImageView ivCountryIcon;
-
         public TextView tvCountryName;
-
         public TextView tvCountryCode;
     }
 

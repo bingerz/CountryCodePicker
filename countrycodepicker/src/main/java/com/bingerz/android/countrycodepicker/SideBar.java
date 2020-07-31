@@ -10,6 +10,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
+/**
+ * @author hanson
+ */
 public class SideBar extends View {
 
     private Context mContext;
@@ -21,7 +24,8 @@ public class SideBar extends View {
             "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",
             "W", "X", "Y", "Z", "#"};
 
-    private int choose = -1;// 选中
+    // 选中
+    private int choose = -1;
 
     private Paint paint = new Paint();
 
@@ -33,7 +37,6 @@ public class SideBar extends View {
     public void setTextView(TextView mTextDialog) {
         this.mTextDialog = mTextDialog;
     }
-
 
     public SideBar(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
@@ -56,12 +59,16 @@ public class SideBar extends View {
     }
 
     // 获取焦点改变背景颜色.
+    @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         // 获取焦点改变背景颜色.
-        int height = getHeight();// 获取对应高度
-        int width = getWidth(); // 获取对应宽度
-        int singleHeight = height / b.length;// 获取每一个字母的高度
+        // 获取对应高度
+        int height = getHeight();
+        // 获取对应宽度
+        int width = getWidth();
+        // 获取每一个字母的高度
+        int singleHeight = height / b.length;
 
         for (int i = 0; i < b.length; i++) {
             paint.setColor(Color.rgb(33, 65, 98));
@@ -80,13 +87,13 @@ public class SideBar extends View {
             canvas.drawText(b[i], xPos, yPos, paint);
             paint.reset();// 重置画笔
         }
-
     }
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
         final int action = event.getAction();
-        final float y = event.getY();// 点击y坐标
+        // 点击y坐标
+        final float y = event.getY();
         final int oldChoose = choose;
         final OnTouchingLetterChangedListener listener = onTouchingLetterChangedListener;
         // 点击y坐标所占总高度的比例*b数组的长度就等于点击b中的个数.
