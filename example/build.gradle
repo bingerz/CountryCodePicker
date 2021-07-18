@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "29.0.3"
+    compileSdkVersion build_versions.target_sdk
+    buildToolsVersion build_versions.build_tools
 
     defaultConfig {
-        applicationId "com.bingerz.android.countrycodepicker.example"
-        minSdkVersion 17
-        targetSdkVersion 28
+        applicationId "cn.bingerz.android.countrycodepicker.example"
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
         versionCode 1
         versionName "1.0"
     }
@@ -20,5 +20,6 @@ android {
 }
 
 dependencies {
-    compile project(':countrycodepicker')
+    implementation "com.android.support:appcompat-v7:$versions.support"
+    implementation project(':countrycodepicker')
 }

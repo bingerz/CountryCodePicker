@@ -45,14 +45,14 @@ buildscript {
   }
 
   dependencies {
-    compile 'com.bingerz.android:countrycodepicker:0.7.0'
+    compile 'cn.bingerz.android:countrycodepicker:0.8.1'
   }
 }
 ```
 
 ```java
 //AndroidManifest.xml 文件中添加此行代码
-<activity android:name="com.bingerz.android.countrycodepicker.CountryCodeActivity" />
+<activity android:name="cn.bingerz.android.countrycodepicker.CountryCodeActivity" />
 ```
 ## 详细说明
 
@@ -60,6 +60,8 @@ buildscript {
 读取json文件过程会对IO造成阻塞，导致界面ANR，现在改为string-array的方式。
 
 ## Release Changes
+### v0.8.1
+ - Bug fixs
 ### v0.7.0
  - Support RTL
 ### v0.6.1
